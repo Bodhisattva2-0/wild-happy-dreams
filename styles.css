@@ -20,3 +20,5 @@ footer .footer-name{font-size:13px;font-weight:700;color:var(--ink);margin-botto
 @media(min-width:1700px){.hero,footer{max-width:1800px;margin:auto}}
 @media(max-width:800px){.hero-heading{align-items:flex-start;flex-direction:column;gap:18px;padding:32px 0 28px}h1{font-size:clamp(40px,7vw,60px);letter-spacing:-2px}.hero-heading p{font-size:13px}.studio-label{font-size:8px;letter-spacing:1px}.wordmark{font-size:19px}figure img{max-height:none;min-height:390px;object-fit:cover;object-position:50% center}figcaption{padding:36px 17px 18px;font-size:8px;letter-spacing:1px}figcaption span:last-child{display:none}}
 @media(max-width:500px){.hero{padding:0 5vw}.masthead{padding:23px 0;align-items:flex-start;flex-direction:column;gap:10px}.studio-label{font-size:8px;letter-spacing:1.6px}h1{font-size:43px;max-width:300px;line-height:1.02}figure img{min-height:0;aspect-ratio:3/2;object-fit:cover;object-position:50% center}footer{padding:25px 5vw;align-items:flex-start;flex-direction:column;gap:14px}.footer-meta{text-align:left}}
+
+footer a{text-decoration:underline;text-underline-offset:3px}
