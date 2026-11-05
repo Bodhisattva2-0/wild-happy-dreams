@@ -25,3 +25,11 @@ h3{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:27px}
 .eyebrow{letter-spacing:2px;font-weight:500}
 @media(max-width:1000px) and (min-width:721px){h1{font-size:75px}}
 @media(max-width:720px){h1{font-size:clamp(61px,12.6vw,88px);letter-spacing:-3px}.intro>p{font-size:16px}}
+
+/* A warm, iconic desk replaces the household collage. */
+.workstation{position:absolute;width:112%;max-width:none;left:-6%;top:0;height:auto}
+.playground .note{top:393px;right:0;width:265px;transform:rotate(5deg);padding:23px 20px 12px}
+.playground .note-title{font-size:18px;margin-bottom:16px}
+.playground .note label{font-size:10px;margin:12px 0}
+.playground .note .tape{left:90px;width:75px}
+@media(max-width:720px){.playground{min-height:535px;margin-top:30px}.workstation{width:116%;left:-8%;top:0}.playground .note{top:290px;right:8px;width:250px}.playground .note label{font-size:10px}}
