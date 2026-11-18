@@ -1,1 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="2" fill="#303c30"/><path d="M12 18L21 46L32 24L43 46L52 18" fill="none" stroke="#eee9df" stroke-width="4" stroke-linejoin="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="color" x1="4" y1="36" x2="61" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff39a9"/>
+      <stop offset=".24" stop-color="#f65aea"/>
+      <stop offset=".49" stop-color="#b367ff"/>
+      <stop offset=".72" stop-color="#30d7ff"/>
+      <stop offset="1" stop-color="#43f5a7"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="22" x2="0" y2="59" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff9be8" stop-opacity=".44"/>
+      <stop offset=".34" stop-color="#ff9be8" stop-opacity="0"/>
+      <stop offset=".65" stop-color="#6927c4" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#6927c4" stop-opacity=".36"/>
+    </linearGradient>
+    <linearGradient id="depth" x2=".8" y2=".7">
+      <stop stop-color="#d42e9f"/>
+      <stop offset=".48" stop-color="#904ddd"/>
+      <stop offset="1" stop-color="#25bfa9"/>
+    </linearGradient>
+    <path id="letter" d="M9 30L17 49Q19 54 22 49L31 32Q32 30 33 32L42 49Q45 54 47 49L55 30"/>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#letter" transform="translate(0 2.25)" stroke="url(#depth)" stroke-width="15"/>
+    <use href="#letter" stroke="url(#color)" stroke-width="15"/>
+    <use href="#letter" stroke="url(#shine)" stroke-width="15"/>
+  </g>
+</svg>

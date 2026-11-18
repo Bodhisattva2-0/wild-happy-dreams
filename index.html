@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#eee9df">
+  <meta name="theme-color" content="#f6f1e6">
   <meta name="description" content="Wild Happy Dreams Ltd is a UK consumer AI studio creating thoughtful apps for a lighter mental load and a more sustainable everyday.">
   <title>Wild Happy Dreams — Digital hygge.</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
@@ -11,15 +11,45 @@
 </head>
 <body>
 <main>
+  <header class="masthead">
+    <button class="mark" type="button" aria-label="Unicorn horn" aria-pressed="false">
+      <span class="mark-art" aria-hidden="true">
+        <svg class="horn" viewBox="0 0 26 38" width="26" height="38">
+          <defs>
+            <linearGradient id="horn-color" x2="1" y2=".3">
+              <stop stop-color="#baa0ed"/>
+              <stop offset=".45" stop-color="#ffc5e9"/>
+              <stop offset=".73" stop-color="#fff4b4"/>
+              <stop offset="1" stop-color="#f6c68d"/>
+            </linearGradient>
+            <clipPath id="horn-edge">
+              <path d="M7 33L13 1L19 33Q13 38 7 33Z"/>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#horn-edge)">
+            <path fill="url(#horn-color)" d="M0 0h26v38H0z"/>
+            <path d="M9 12q7 4 16 0M5 20q8 5 19 0M1 29q10 6 22 0" fill="none" stroke="#c38fda" stroke-width="2.7" opacity=".62"/>
+            <path d="M9 13.5q7 4 16 0M5 21.5q8 5 19 0M1 30.5q10 6 22 0" fill="none" stroke="#fff6da" stroke-width="1" opacity=".9"/>
+          </g>
+        </svg>
+        <img src="icon.svg" width="96" height="96" alt="">
+      </span>
+    </button>
+  </header>
   <section class="hero" aria-labelledby="hero-title">
-    <div class="masthead"><a class="wordmark" href="./" aria-label="Wild Happy Dreams home">Wild Happy Dreams</a><span class="studio-label">INDEPENDENT AI STUDIO · UK</span></div>
     <div class="hero-heading"><h1 id="hero-title">A little digital hygge.</h1><p>Thoughtful apps. A lighter mental load.<br>More room for everyday life.</p></div>
     <figure>
       <img src="assets/steve-jobs-home-office.webp" width="1568" height="1046" fetchpriority="high" alt="Steve Jobs leaning over his desk in his Palo Alto home office, with bookshelves behind him.">
-      <figcaption><span>Diana Walker / Contour by Getty Images for TIME</span><span>WILD HAPPY DREAMS</span></figcaption>
     </figure>
   </section>
 </main>
 <footer><div><p class="footer-name">Wild Happy Dreams Ltd</p><p>A UK consumer AI studio for a simpler, more sustainable everyday.</p></div><div class="footer-meta"><p><a href="mailto:hello@wildhappydreams.com">hello@wildhappydreams.com</a></p><p>Our first apps are taking shape.</p><p>© 2026 Wild Happy Dreams Ltd</p></div></footer>
+<script>
+  const mark = document.querySelector('.mark');
+  mark.addEventListener('click', () => {
+    const isPressed = mark.getAttribute('aria-pressed') === 'true';
+    mark.setAttribute('aria-pressed', String(!isPressed));
+  });
+</script>
 </body>
 </html>
